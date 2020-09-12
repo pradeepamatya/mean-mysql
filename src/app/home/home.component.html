@@ -2,7 +2,7 @@
     <div class="jumbotron mt-5">
         <div class="col-sm-8 mx-auto">
             <h1 class="text-center" *ngIf="!auth.isLoggedIn()">WELCOME</h1>
-            <h1 class="text-center" *ngIf="auth.isLoggedIn()">WELCOME {{auth.getUserDetails()?.first_name}}!</h1>
+            <h1 class="text-center" *ngIf="auth.isLoggedIn()">WELCOME {{auth.getUserDetails()?.first_name}} {{auth.getUserDetails()?.last_name}}!</h1>
         </div>
     </div>
 </div>
